@@ -15,7 +15,7 @@ defmodule FateCalculatorTest do
     assert next_fate(true, 8) == false
   end
 
-  test "living cell" do
+  test "dead cell" do
     assert next_fate(false, 0) == false
     assert next_fate(false, 1) == false
     assert next_fate(false, 2) == false
