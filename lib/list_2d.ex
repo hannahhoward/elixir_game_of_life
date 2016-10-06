@@ -11,4 +11,8 @@ defmodule GameOfLife.List2d do
         Enum.zip(row1, row2)
       end)
   end
+
+  def transpose(list2d) do
+    List.zip(list2d) |> Enum.map(&Tuple.to_list(&1))
+  end
 end
