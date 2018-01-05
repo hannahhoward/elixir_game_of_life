@@ -1,7 +1,7 @@
 defmodule TriplesTest do
   use ExUnit.Case
-  doctest GameOfLife.Triples
   import GameOfLife.Triples
+  doctest GameOfLife.Triples
 
   test "creates triples" do
     assert triples([1, 2, 3, 4, 5], false) == [

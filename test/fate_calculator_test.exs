@@ -1,8 +1,8 @@
 defmodule FateCalculatorTest do
   use ExUnit.Case
-  doctest GameOfLife.FateCalculator
   import GameOfLife.FateCalculator
-
+  doctest GameOfLife.FateCalculator
+  
   test "living cell" do
     assert next_fate(true, 0) == false
     assert next_fate(true, 1) == false

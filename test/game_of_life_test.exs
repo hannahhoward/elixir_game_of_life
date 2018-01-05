@@ -1,8 +1,8 @@
 defmodule GameOfLifeTest do
   use ExUnit.Case
-  doctest GameOfLife
   import GameOfLife
-
+  doctest GameOfLife
+  
   test "calculates the next board" do
     initial_board = [
       [false, false, true], 
